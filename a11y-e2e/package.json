@@ -1,0 +1,25 @@
+{
+  "name": "technerds-a11y",
+  "version": "1.0.0",
+  "description": "End-to-end accessibility (WCAG 2.2 AA) test suite for https://www.technerdsng.com using Playwright, TypeScript, Cucumber and axe-core",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js",
+    "test:positive": "cucumber-js --tags \"@positive\"",
+    "test:negative": "cucumber-js --tags \"@negative\"",
+    "test:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:ci": "cucumber-js --profile ci",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "install:browsers": "playwright install --with-deps chromium firefox webkit",
+    "typecheck": "tsc --noEmit",
+    "export": "ts-node scripts/export-test-cases.ts && python3 scripts/export_excel.py"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "axe-core": "^4.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
