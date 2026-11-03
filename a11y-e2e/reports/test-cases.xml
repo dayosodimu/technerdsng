@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSuite name="technerdsng.com — End-to-end accessibility (WCAG 2.2 AA)" target="https://www.technerdsng.com" generated="2026-11-03T23:11:35.229Z" total="57">
+  <testCase id="TC-SCAN-01" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="16">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Home page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=Home</testData>
+      <durationMs>2147</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-02" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="17">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>About Us page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;About Us&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=About Us</testData>
+      <durationMs>1819</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-03" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="18">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Services page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Services&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=Services</testData>
+      <durationMs>1998</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-04" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="19">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>News page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;News&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=News</testData>
+      <durationMs>1956</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-05" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="20">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Process page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Process&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=Process</testData>
+      <durationMs>1808</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-06" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="21">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Contact page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Contact&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=Contact</testData>
+      <durationMs>1926</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-07" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="22">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Privacy Policy page content has no serious or critical WCAG 2.2 AA violations</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Privacy Policy&quot; page</step>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData>page=Privacy Policy</testData>
+      <durationMs>1866</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-08" type="Negative" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/01_wcag_automated_scan.feature" line="26">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Pages must not block pinch-zoom through the viewport meta tag</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>1.4.4</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@negative</tag>
+        <tag>@known-defect</tag>
+        <tag>@wcag-1.4.4</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>When I visit every public page</step>
+        <step>Then no page should restrict zoom with &quot;maximum-scale&quot; below 2 or &quot;user-scalable=no&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then no page should restrict zoom with &quot;maximum-scale&quot; below 2 or &quot;user-scalable=no&quot;</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>10242</durationMs>
+      <failureReason>Error: Zoom is blocked (WCAG 1.4.4) on: / → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /about → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /services → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /news → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /process → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot;</failureReason>
+  </testCase>
+  <testCase id="TC-SCAN-09" type="Negative" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/01_wcag_automated_scan.feature" line="40">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Home page passes axe best-practice landmark rules</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>best-practice</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@negative</tag>
+        <tag>@best-practice</tag>
+        <tag>@known-defect</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>When I run the axe-core rules &quot;landmark-one-main, landmark-unique, region, landmark-complementary-is-top-level, page-has-heading-one&quot;</step>
+        <step>Then there should be no violations</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no violations</result>
+      </expectedResults>
+      <testData>page=Home</testData>
+      <durationMs>1532</durationMs>
+      <failureReason>Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI expect(received).toHaveLength(expected) Expected length: 0 Received length: 1</failureReason>
+  </testCase>
+  <testCase id="TC-SCAN-10" type="Negative" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/01_wcag_automated_scan.feature" line="41">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Contact page passes axe best-practice landmark rules</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>best-practice</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@negative</tag>
+        <tag>@best-practice</tag>
+        <tag>@known-defect</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Contact&quot; page</step>
+        <step>When I run the axe-core rules &quot;landmark-one-main, landmark-unique, region, landmark-complementary-is-top-level, page-has-heading-one&quot;</step>
+        <step>Then there should be no violations</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no violations</result>
+      </expectedResults>
+      <testData>page=Contact</testData>
+      <durationMs>1539</durationMs>
+      <failureReason>Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI expect(received).toHaveLength(expected) Expected length: 0 Received length: 1</failureReason>
+  </testCase>
+  <testCase id="TC-SCAN-11" type="Negative" priority="Low" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="45">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>About Us page passes axe best-practice landmark rules</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>best-practice</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@negative</tag>
+        <tag>@best-practice</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;About Us&quot; page</step>
+        <step>When I run the axe-core rules &quot;landmark-one-main, landmark-unique, region, landmark-complementary-is-top-level, page-has-heading-one&quot;</step>
+        <step>Then there should be no violations</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no violations</result>
+      </expectedResults>
+      <testData>page=About Us</testData>
+      <durationMs>1688</durationMs>
+  </testCase>
+  <testCase id="TC-SCAN-12" type="Negative" priority="Low" status="Passed" knownDefect="false">
+      <feature file="features/01_wcag_automated_scan.feature" line="46">Automated WCAG 2.2 AA scan of every public page</feature>
+      <title>Services page passes axe best-practice landmark rules</title>
+      <category>scan</category>
+      <wcag>
+        <criterion>best-practice</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@scan</tag>
+        <tag>@negative</tag>
+        <tag>@best-practice</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Services&quot; page</step>
+        <step>When I run the axe-core rules &quot;landmark-one-main, landmark-unique, region, landmark-complementary-is-top-level, page-has-heading-one&quot;</step>
+        <step>Then there should be no violations</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no violations</result>
+      </expectedResults>
+      <testData>page=Services</testData>
+      <durationMs>1460</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-01" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="12">Keyboard-only navigation</feature>
+      <title>Skip link is the first focusable element and jumps to main content</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.4.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+        <tag>@wcag-2.4.1</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I press &quot;Tab&quot;</step>
+        <step>Then the focused element should be the link &quot;Skip to main content&quot;</step>
+        <step>And the focused element should be fully visible in the viewport</step>
+        <step>When I press &quot;Enter&quot;</step>
+        <step>Then focus should move to the main content region</step>
+      </steps>
+      <expectedResults>
+        <result>Then the focused element should be the link &quot;Skip to main content&quot;</result>
+        <result>And the focused element should be fully visible in the viewport</result>
+        <result>Then focus should move to the main content region</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1927</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-02" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="21">Keyboard-only navigation</feature>
+      <title>Header focus order matches the visual order</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.4.3</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.4.3</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I press &quot;Tab&quot; 7 times</step>
+        <step>Then the focus order should have been: [Skip to main content | Technerds home | About Us | Services | News | Process | Contact]</step>
+      </steps>
+      <expectedResults>
+        <result>Then the focus order should have been: [Skip to main content | Technerds home | About Us | Services | News | Process | Contact]</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1412</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-03" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="34">Keyboard-only navigation</feature>
+      <title>Shift+Tab moves focus backwards</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.4.3</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.4.3</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I press &quot;Tab&quot; 3 times</step>
+        <step>And I press &quot;Shift+Tab&quot;</step>
+        <step>Then the focused element should be the link &quot;Technerds home&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then the focused element should be the link &quot;Technerds home&quot;</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1625</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-04" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="41">Keyboard-only navigation</feature>
+      <title>Every focusable element shows a visible focus indicator</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.4.7</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.4.7</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I tab through the whole page</step>
+        <step>Then every focused element should have a visible focus indicator</step>
+      </steps>
+      <expectedResults>
+        <result>Then every focused element should have a visible focus indicator</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1577</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-05" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="47">Keyboard-only navigation</feature>
+      <title>A navigation link can be activated with the Enter key</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.1.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.1.1</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>Given the cookie banner is dismissed</step>
+        <step>When I move focus to the primary navigation link &quot;Services&quot;</step>
+        <step>And I press &quot;Enter&quot;</step>
+        <step>Then the &quot;Services&quot; page should load with a descriptive title</step>
+      </steps>
+      <expectedResults>
+        <result>Then the &quot;Services&quot; page should load with a descriptive title</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1559</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-06" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/02_keyboard_navigation.feature" line="55">Keyboard-only navigation</feature>
+      <title>Keyboard focus is never trapped</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.1.2</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@negative</tag>
+        <tag>@wcag-2.1.2</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I tab through the whole page</step>
+        <step>Then focus should have reached the footer &quot;Privacy options&quot; button</step>
+        <step>And focus should never have stayed on the same element for consecutive Tab presses</step>
+      </steps>
+      <expectedResults>
+        <result>Then focus should have reached the footer &quot;Privacy options&quot; button</result>
+        <result>And focus should never have stayed on the same element for consecutive Tab presses</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1552</durationMs>
+  </testCase>
+  <testCase id="TC-KEY-07" type="Negative" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/02_keyboard_navigation.feature" line="62">Keyboard-only navigation</feature>
+      <title>Focused elements are not hidden behind the cookie banner</title>
+      <category>keyboard</category>
+      <wcag>
+        <criterion>2.4.11</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@keyboard</tag>
+        <tag>@negative</tag>
+        <tag>@known-defect</tag>
+        <tag>@wcag-2.4.11</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I tab through the page while the cookie banner is open</step>
+        <step>Then no focused element should be fully covered by the cookie banner</step>
+      </steps>
+      <expectedResults>
+        <result>Then no focused element should be fully covered by the cookie banner</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1614</durationMs>
+      <failureReason>Error: focused elements fully hidden behind the cookie banner (WCAG 2.4.11) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [</failureReason>
+  </testCase>
+  <testCase id="TC-MOB-01" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/03_mobile_navigation.feature" line="12">Mobile navigation menu (390 × 844 viewport)</feature>
+      <title>Menu toggle exposes its name, state and controlled region</title>
+      <category>mobile</category>
+      <wcag>
+        <criterion>4.1.2</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@mobile</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+        <tag>@wcag-4.1.2</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>Then the menu toggle should have accessible name &quot;Open navigation menu&quot;</step>
+        <step>And the menu toggle should have &quot;aria-expanded&quot; set to &quot;false&quot;</step>
+        <step>And the menu toggle should control the element &quot;primary-navigation&quot;</step>
+        <step>And the primary navigation should be hidden</step>
+      </steps>
+      <expectedResults>
+        <result>Then the menu toggle should have accessible name &quot;Open navigation menu&quot;</result>
+        <result>And the menu toggle should have &quot;aria-expanded&quot; set to &quot;false&quot;</result>
+        <result>And the menu toggle should control the element &quot;primary-navigation&quot;</result>
+        <result>And the primary navigation should be hidden</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1588</durationMs>
+  </testCase>
+  <testCase id="TC-MOB-02" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/03_mobile_navigation.feature" line="20">Mobile navigation menu (390 × 844 viewport)</feature>
+      <title>Opening the menu with the keyboard updates state and reveals links</title>
+      <category>mobile</category>
+      <wcag>
+        <criterion>4.1.2</criterion>
+        <criterion>2.1.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@mobile</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-4.1.2</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I focus the menu toggle and press &quot;Enter&quot;</step>
+        <step>Then the menu toggle should have &quot;aria-expanded&quot; set to &quot;true&quot;</step>
+        <step>And the menu toggle should have accessible name &quot;Close navigation menu&quot;</step>
+        <step>And the primary navigation should be visible</step>
+        <step>When I press &quot;Tab&quot;</step>
+        <step>Then the focused element should be the link &quot;About Us&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then the menu toggle should have &quot;aria-expanded&quot; set to &quot;true&quot;</result>
+        <result>And the menu toggle should have accessible name &quot;Close navigation menu&quot;</result>
+        <result>And the primary navigation should be visible</result>
+        <result>Then the focused element should be the link &quot;About Us&quot;</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1555</durationMs>
+  </testCase>
+  <testCase id="TC-MOB-03" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/03_mobile_navigation.feature" line="30">Mobile navigation menu (390 × 844 viewport)</feature>
+      <title>Escape closes the open menu and returns focus to the toggle</title>
+      <category>mobile</category>
+      <wcag>
+        <criterion>2.4.3</criterion>
+        <criterion>2.1.2</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@mobile</tag>
+        <tag>@negative</tag>
+        <tag>@wcag-2.4.3</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I focus the menu toggle and press &quot;Enter&quot;</step>
+        <step>And I press &quot;Escape&quot;</step>
+        <step>Then the menu toggle should have &quot;aria-expanded&quot; set to &quot;false&quot;</step>
+        <step>And the primary navigation should be hidden</step>
+        <step>And the menu toggle should have keyboard focus</step>
+      </steps>
+      <expectedResults>
+        <result>Then the menu toggle should have &quot;aria-expanded&quot; set to &quot;false&quot;</result>
+        <result>And the primary navigation should be hidden</result>
+        <result>And the menu toggle should have keyboard focus</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1534</durationMs>
+  </testCase>
+  <testCase id="TC-MOB-04" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/03_mobile_navigation.feature" line="39">Mobile navigation menu (390 × 844 viewport)</feature>
+      <title>Links inside the collapsed menu cannot receive focus</title>
+      <category>mobile</category>
+      <wcag>
+        <criterion>2.4.3</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@mobile</tag>
+        <tag>@negative</tag>
+        <tag>@wcag-2.4.3</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I press &quot;Tab&quot; 6 times</step>
+        <step>Then no hidden primary navigation link should have received focus</step>
+      </steps>
+      <expectedResults>
+        <result>Then no hidden primary navigation link should have received focus</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1345</durationMs>
+  </testCase>
+  <testCase id="TC-MOB-05" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/03_mobile_navigation.feature" line="45">Mobile navigation menu (390 × 844 viewport)</feature>
+      <title>Mobile layout has no serious or critical WCAG violations</title>
+      <category>mobile</category>
+      <wcag/>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@mobile</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no &quot;serious&quot; or worse violations except tracked rule &quot;meta-viewport&quot;</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>2133</durationMs>
+  </testCase>
+  <testCase id="TC-CK-01" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/04_cookie_consent.feature" line="12">Cookie consent banner</feature>
+      <title>Banner is a labelled region with named buttons</title>
+      <category>cookies</category>
+      <wcag>
+        <criterion>4.1.2</criterion>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@cookies</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+        <tag>@wcag-4.1.2</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>Then the cookie banner should be a region labelled &quot;Your cookie choices&quot;</step>
+        <step>And the cookie banner should offer the buttons: [Accept all cookies | Reject optional cookies | Customize choices]</step>
+      </steps>
+      <expectedResults>
+        <result>Then the cookie banner should be a region labelled &quot;Your cookie choices&quot;</result>
+        <result>And the cookie banner should offer the buttons: [Accept all cookies | Reject optional cookies | Customize choices]</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1493</durationMs>
+  </testCase>
+  <testCase id="TC-CK-02" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/04_cookie_consent.feature" line="21">Cookie consent banner</feature>
+      <title>Rejecting optional cookies with the keyboard dismisses the banner and is remembered</title>
+      <category>cookies</category>
+      <wcag>
+        <criterion>2.1.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@cookies</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.1.1</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I activate the cookie button &quot;Reject optional cookies&quot; with the keyboard</step>
+        <step>Then the cookie banner should not be visible</step>
+        <step>When I reload the page</step>
+        <step>Then the cookie banner should not be visible</step>
+      </steps>
+      <expectedResults>
+        <result>Then the cookie banner should not be visible</result>
+        <result>Then the cookie banner should not be visible</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>2705</durationMs>
+  </testCase>
+  <testCase id="TC-CK-03" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/04_cookie_consent.feature" line="29">Cookie consent banner</feature>
+      <title>Customize moves focus to the category settings and every toggle is labelled</title>
+      <category>cookies</category>
+      <wcag>
+        <criterion>2.4.3</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@cookies</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.4.3</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I activate the cookie button &quot;Customize choices&quot; with the keyboard</step>
+        <step>Then focus should move into the cookie category settings</step>
+        <step>And every cookie category checkbox should have a programmatic label</step>
+      </steps>
+      <expectedResults>
+        <result>Then focus should move into the cookie category settings</result>
+        <result>And every cookie category checkbox should have a programmatic label</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1622</durationMs>
+  </testCase>
+  <testCase id="TC-CK-04" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/04_cookie_consent.feature" line="36">Cookie consent banner</feature>
+      <title>Privacy options in the footer re-opens the banner from the keyboard</title>
+      <category>cookies</category>
+      <wcag>
+        <criterion>2.1.1</criterion>
+        <criterion>3.2.6</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@cookies</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-2.1.1</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>Given the cookie banner is dismissed</step>
+        <step>When I move focus to the footer &quot;Privacy options&quot; button and press &quot;Enter&quot;</step>
+        <step>Then the cookie banner should be visible</step>
+      </steps>
+      <expectedResults>
+        <result>Then the cookie banner should be visible</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1487</durationMs>
+  </testCase>
+  <testCase id="TC-CK-05" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/04_cookie_consent.feature" line="43">Cookie consent banner</feature>
+      <title>Cookie banner content has no WCAG violations in either state</title>
+      <category>cookies</category>
+      <wcag/>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@cookies</tag>
+        <tag>@negative</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I scan only the cookie banner against WCAG 2.2 AA</step>
+        <step>Then there should be no violations</step>
+        <step>When I activate the cookie button &quot;Customize choices&quot; with the keyboard</step>
+        <step>And I scan only the cookie banner against WCAG 2.2 AA</step>
+        <step>Then there should be no violations</step>
+      </steps>
+      <expectedResults>
+        <result>Then there should be no violations</result>
+        <result>Then there should be no violations</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>2253</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-01" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="19">Page structure, landmarks and semantics</feature>
+      <title>Home page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=Home</testData>
+      <durationMs>1481</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-02" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="20">Page structure, landmarks and semantics</feature>
+      <title>About Us page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;About Us&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=About Us</testData>
+      <durationMs>1573</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-03" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="21">Page structure, landmarks and semantics</feature>
+      <title>Services page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Services&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=Services</testData>
+      <durationMs>1390</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-04" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="22">Page structure, landmarks and semantics</feature>
+      <title>News page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;News&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=News</testData>
+      <durationMs>1508</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-05" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="23">Page structure, landmarks and semantics</feature>
+      <title>Process page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Process&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=Process</testData>
+      <durationMs>1571</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-06" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="24">Page structure, landmarks and semantics</feature>
+      <title>Contact page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Contact&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=Contact</testData>
+      <durationMs>1602</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-07" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="25">Page structure, landmarks and semantics</feature>
+      <title>Privacy Policy page has a correct document outline</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Privacy Policy&quot; page</step>
+        <step>Then the document language should be &quot;en&quot;</step>
+        <step>And the page title should be descriptive and mention &quot;Technerds&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And heading levels should not skip</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the document language should be &quot;en&quot;</result>
+        <result>And the page title should be descriptive and mention &quot;Technerds&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And heading levels should not skip</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData>page=Privacy Policy</testData>
+      <durationMs>1535</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-08" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="29">Page structure, landmarks and semantics</feature>
+      <title>Every page has a unique title</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>2.4.2</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>When I visit every public page</step>
+        <step>Then every page title should be unique</step>
+      </steps>
+      <expectedResults>
+        <result>Then every page title should be unique</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>9784</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-09" type="Positive" priority="High" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="35">Page structure, landmarks and semantics</feature>
+      <title>Images, links and buttons on the Home page have text alternatives</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.1.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+        <tag>@smoke</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>Then every image should have an alt attribute or be hidden from assistive technology</step>
+        <step>And every link should have a discernible accessible name</step>
+        <step>And every button should have a discernible accessible name</step>
+        <step>And every email link text should state the email address</step>
+      </steps>
+      <expectedResults>
+        <result>Then every image should have an alt attribute or be hidden from assistive technology</result>
+        <result>And every link should have a discernible accessible name</result>
+        <result>And every button should have a discernible accessible name</result>
+        <result>And every email link text should state the email address</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1551</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-10" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/05_structure_semantics.feature" line="44">Page structure, landmarks and semantics</feature>
+      <title>Home page lists all six services as headed articles</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>1.3.1</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@positive</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>Then the services section should contain 6 service cards each with a level-3 heading</step>
+      </steps>
+      <expectedResults>
+        <result>Then the services section should contain 6 service cards each with a level-3 heading</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1648</durationMs>
+  </testCase>
+  <testCase id="TC-SEM-11" type="Negative" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/05_structure_semantics.feature" line="50">Page structure, landmarks and semantics</feature>
+      <title>Unknown URL shows an accessible 404 page with a way back</title>
+      <category>semantics</category>
+      <wcag>
+        <criterion>2.4.5</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@semantics</tag>
+        <tag>@negative</tag>
+        <tag>@known-defect</tag>
+        <tag>@wcag-2.4.5</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the URL &quot;/this-page-does-not-exist&quot;</step>
+        <step>Then the page title should contain &quot;not found&quot;</step>
+        <step>And the page should have exactly one level-1 heading</step>
+        <step>And the page should offer a link back to the Home page</step>
+        <step>And the page should expose banner, navigation, main and contentinfo landmarks</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page title should contain &quot;not found&quot;</result>
+        <result>And the page should have exactly one level-1 heading</result>
+        <result>And the page should offer a link back to the Home page</result>
+        <result>And the page should expose banner, navigation, main and contentinfo landmarks</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1454</durationMs>
+      <failureReason>Error: &quot;banner&quot; landmark count expect(received).toBeGreaterThan(expected) Expected: &gt; 0 Received: 0</failureReason>
+  </testCase>
+  <testCase id="TC-RSP-01" type="Positive" priority="High" status="Failed" knownDefect="true">
+      <feature file="features/06_responsive_motion.feature" line="18">Reflow, text resizing, text spacing and motion</feature>
+      <title>Home page reflows at 320 CSS pixels without loss of content</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.10</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.10</tag>
+        <tag>@known-defect</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given the viewport is 320 by 640 pixels</step>
+        <step>And I open the &quot;Home&quot; page</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text or control should be cut off at the viewport edge</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text or control should be cut off at the viewport edge</result>
+      </expectedResults>
+      <testData>page=Home</testData>
+      <durationMs>1669</durationMs>
+      <failureReason>Error: content extending beyond the viewport (WCAG 1.4.10) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 16 - Array [] + Array [</failureReason>
+  </testCase>
+  <testCase id="TC-RSP-02" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="22">Reflow, text resizing, text spacing and motion</feature>
+      <title>Services page reflows at 320 CSS pixels without loss of content</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.10</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.10</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given the viewport is 320 by 640 pixels</step>
+        <step>And I open the &quot;Services&quot; page</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text or control should be cut off at the viewport edge</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text or control should be cut off at the viewport edge</result>
+      </expectedResults>
+      <testData>page=Services</testData>
+      <durationMs>1493</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-03" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="23">Reflow, text resizing, text spacing and motion</feature>
+      <title>Contact page reflows at 320 CSS pixels without loss of content</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.10</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.10</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given the viewport is 320 by 640 pixels</step>
+        <step>And I open the &quot;Contact&quot; page</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text or control should be cut off at the viewport edge</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text or control should be cut off at the viewport edge</result>
+      </expectedResults>
+      <testData>page=Contact</testData>
+      <durationMs>1607</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-04" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="24">Reflow, text resizing, text spacing and motion</feature>
+      <title>Process page reflows at 320 CSS pixels without loss of content</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.10</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.10</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given the viewport is 320 by 640 pixels</step>
+        <step>And I open the &quot;Process&quot; page</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text or control should be cut off at the viewport edge</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text or control should be cut off at the viewport edge</result>
+      </expectedResults>
+      <testData>page=Process</testData>
+      <durationMs>1567</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-05" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="28">Reflow, text resizing, text spacing and motion</feature>
+      <title>Text resized to 200% does not cause horizontal scrolling or hide the main heading</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.4</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.4</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>When I resize text to 200 percent</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text or control should be cut off at the viewport edge</step>
+        <step>And the level-1 heading should be visible</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text or control should be cut off at the viewport edge</result>
+        <result>And the level-1 heading should be visible</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1865</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-06" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="37">Reflow, text resizing, text spacing and motion</feature>
+      <title>Increased text spacing does not clip content</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>1.4.12</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@wcag-1.4.12</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>When I apply the WCAG text-spacing overrides</step>
+        <step>Then the page should not scroll horizontally</step>
+        <step>And no text container should clip its content</step>
+      </steps>
+      <expectedResults>
+        <result>Then the page should not scroll horizontally</result>
+        <result>And no text container should clip its content</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1910</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-07" type="Positive" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="45">Reflow, text resizing, text spacing and motion</feature>
+      <title>Animations are disabled when the user prefers reduced motion</title>
+      <category>responsive</category>
+      <wcag>
+        <criterion>2.3.3</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@positive</tag>
+        <tag>@reduced-motion</tag>
+        <tag>@wcag-2.3.3</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>Then no element should be running a CSS animation</step>
+      </steps>
+      <expectedResults>
+        <result>Then no element should be running a CSS animation</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1596</durationMs>
+  </testCase>
+  <testCase id="TC-RSP-08" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/06_responsive_motion.feature" line="51">Reflow, text resizing, text spacing and motion</feature>
+      <title>Without a reduced-motion preference the hero animation does run</title>
+      <category>responsive</category>
+      <wcag/>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@responsive</tag>
+        <tag>@negative</tag>
+      </tags>
+      <preconditions/>
+      <steps>
+        <step>Given I open the &quot;Home&quot; page</step>
+        <step>Then at least one element should be running a CSS animation</step>
+      </steps>
+      <expectedResults>
+        <result>Then at least one element should be running a CSS animation</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1397</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-01" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="18">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;image without alt&quot; is reported by axe-core as &quot;image-alt&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;image without alt&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;image-alt&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;image-alt&quot;</result>
+      </expectedResults>
+      <testData>defect=image without alt; rule=image-alt</testData>
+      <durationMs>2154</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-02" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="19">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;icon button without a name&quot; is reported by axe-core as &quot;button-name&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;icon button without a name&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;button-name&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;button-name&quot;</result>
+      </expectedResults>
+      <testData>defect=icon button without a name; rule=button-name</testData>
+      <durationMs>2186</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-03" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="20">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;empty link&quot; is reported by axe-core as &quot;link-name&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;empty link&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;link-name&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;link-name&quot;</result>
+      </expectedResults>
+      <testData>defect=empty link; rule=link-name</testData>
+      <durationMs>2066</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-04" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="21">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;unlabelled text input&quot; is reported by axe-core as &quot;label&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;unlabelled text input&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;label&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;label&quot;</result>
+      </expectedResults>
+      <testData>defect=unlabelled text input; rule=label</testData>
+      <durationMs>1963</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-05" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="22">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;low contrast text&quot; is reported by axe-core as &quot;color-contrast&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;low contrast text&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;color-contrast&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;color-contrast&quot;</result>
+      </expectedResults>
+      <testData>defect=low contrast text; rule=color-contrast</testData>
+      <durationMs>1820</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-06" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="23">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;focusable aria-hidden content&quot; is reported by axe-core as &quot;aria-hidden-focus&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;focusable aria-hidden content&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;aria-hidden-focus&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;aria-hidden-focus&quot;</result>
+      </expectedResults>
+      <testData>defect=focusable aria-hidden content; rule=aria-hidden-focus</testData>
+      <durationMs>2083</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-07" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="24">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Injected defect &quot;invalid ARIA attribute&quot; is reported by axe-core as &quot;aria-valid-attr&quot;</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I inject the defect &quot;invalid ARIA attribute&quot; into the main content</step>
+        <step>And I run an axe-core scan against WCAG 2.2 AA</step>
+        <step>Then axe-core should report the rule &quot;aria-valid-attr&quot;</step>
+      </steps>
+      <expectedResults>
+        <result>Then axe-core should report the rule &quot;aria-valid-attr&quot;</result>
+      </expectedResults>
+      <testData>defect=invalid ARIA attribute; rule=aria-valid-attr</testData>
+      <durationMs>1932</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-08" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="27">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>Removing the focus outline is detected by the focus-visible check</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>When I remove all focus styles from the page</step>
+        <step>And I tab through the whole page</step>
+        <step>Then the focus-visible check should report at least one element without an indicator</step>
+      </steps>
+      <expectedResults>
+        <result>Then the focus-visible check should report at least one element without an indicator</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1470</durationMs>
+  </testCase>
+  <testCase id="TC-NEG-09" type="Negative" priority="Medium" status="Passed" knownDefect="false">
+      <feature file="features/07_negative_controls.feature" line="33">Negative controls — the suite must catch real accessibility defects</feature>
+      <title>A fixed-width element wider than the viewport is detected by the reflow check</title>
+      <category>control</category>
+      <wcag>
+        <criterion>WCAG 2.2 A/AA (axe ruleset)</criterion>
+      </wcag>
+      <tags>
+        <tag>@a11y</tag>
+        <tag>@negative</tag>
+        <tag>@control</tag>
+      </tags>
+      <preconditions>
+        <step>Given I open the &quot;Home&quot; page</step>
+      </preconditions>
+      <steps>
+        <step>Given the viewport is 320 by 640 pixels</step>
+        <step>When I inject the defect &quot;fixed 1000px wide box&quot; into the main content</step>
+        <step>Then content should extend beyond the viewport</step>
+      </steps>
+      <expectedResults>
+        <result>Then content should extend beyond the viewport</result>
+      </expectedResults>
+      <testData></testData>
+      <durationMs>1554</durationMs>
+  </testCase>
+</testSuite>

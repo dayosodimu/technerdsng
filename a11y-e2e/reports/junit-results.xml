@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="technerdsng.com accessibility">
+  <testsuite name="Automated WCAG 2.2 AA scan of every public page" tests="12" failures="3" skipped="0" time="29.981">
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-01 Home page content has no serious or critical WCAG 2.2 AA violations" time="2.147"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-02 About Us page content has no serious or critical WCAG 2.2 AA violations" time="1.819"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-03 Services page content has no serious or critical WCAG 2.2 AA violations" time="1.998"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-04 News page content has no serious or critical WCAG 2.2 AA violations" time="1.956"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-05 Process page content has no serious or critical WCAG 2.2 AA violations" time="1.808"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-06 Contact page content has no serious or critical WCAG 2.2 AA violations" time="1.926"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-07 Privacy Policy page content has no serious or critical WCAG 2.2 AA violations" time="1.866"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-08 Pages must not block pinch-zoom through the viewport meta tag" time="10.242">
+      <failure message="[known defect] Error: Zoom is blocked (WCAG 1.4.4) on: / → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /about → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /services → conte">Error: Zoom is blocked (WCAG 1.4.4) on: / → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /about → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /services → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /news → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /process → content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot;</failure>
+    </testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-09 Home page passes axe best-practice landmark rules" time="1.532">
+      <failure message="[known defect] Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-le">Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI expect(received).toHaveLength(expected) Expected length: 0 Received length: 1</failure>
+    </testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-10 Contact page passes axe best-practice landmark rules" time="1.539">
+      <failure message="[known defect] Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-le">Error: • [moderate] landmark-complementary-is-top-level: Aside should not be contained in another landmark (1 node(s)) aside https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI expect(received).toHaveLength(expected) Expected length: 0 Received length: 1</failure>
+    </testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-11 About Us page passes axe best-practice landmark rules" time="1.688"></testcase>
+    <testcase classname="features/01_wcag_automated_scan.feature" name="TC-SCAN-12 Services page passes axe best-practice landmark rules" time="1.460"></testcase>
+  </testsuite>
+  <testsuite name="Keyboard-only navigation" tests="7" failures="1" skipped="0" time="11.266">
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-01 Skip link is the first focusable element and jumps to main content" time="1.927"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-02 Header focus order matches the visual order" time="1.412"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-03 Shift+Tab moves focus backwards" time="1.625"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-04 Every focusable element shows a visible focus indicator" time="1.577"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-05 A navigation link can be activated with the Enter key" time="1.559"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-06 Keyboard focus is never trapped" time="1.552"></testcase>
+    <testcase classname="features/02_keyboard_navigation.feature" name="TC-KEY-07 Focused elements are not hidden behind the cookie banner" time="1.614">
+      <failure message="[known defect] Error: focused elements fully hidden behind the cookie banner (WCAG 2.4.11) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [">Error: focused elements fully hidden behind the cookie banner (WCAG 2.4.11) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Mobile navigation menu (390 × 844 viewport)" tests="5" failures="0" skipped="0" time="8.155">
+    <testcase classname="features/03_mobile_navigation.feature" name="TC-MOB-01 Menu toggle exposes its name, state and controlled region" time="1.588"></testcase>
+    <testcase classname="features/03_mobile_navigation.feature" name="TC-MOB-02 Opening the menu with the keyboard updates state and reveals links" time="1.555"></testcase>
+    <testcase classname="features/03_mobile_navigation.feature" name="TC-MOB-03 Escape closes the open menu and returns focus to the toggle" time="1.534"></testcase>
+    <testcase classname="features/03_mobile_navigation.feature" name="TC-MOB-04 Links inside the collapsed menu cannot receive focus" time="1.345"></testcase>
+    <testcase classname="features/03_mobile_navigation.feature" name="TC-MOB-05 Mobile layout has no serious or critical WCAG violations" time="2.133"></testcase>
+  </testsuite>
+  <testsuite name="Cookie consent banner" tests="5" failures="0" skipped="0" time="9.560">
+    <testcase classname="features/04_cookie_consent.feature" name="TC-CK-01 Banner is a labelled region with named buttons" time="1.493"></testcase>
+    <testcase classname="features/04_cookie_consent.feature" name="TC-CK-02 Rejecting optional cookies with the keyboard dismisses the banner and is remembered" time="2.705"></testcase>
+    <testcase classname="features/04_cookie_consent.feature" name="TC-CK-03 Customize moves focus to the category settings and every toggle is labelled" time="1.622"></testcase>
+    <testcase classname="features/04_cookie_consent.feature" name="TC-CK-04 Privacy options in the footer re-opens the banner from the keyboard" time="1.487"></testcase>
+    <testcase classname="features/04_cookie_consent.feature" name="TC-CK-05 Cookie banner content has no WCAG violations in either state" time="2.253"></testcase>
+  </testsuite>
+  <testsuite name="Page structure, landmarks and semantics" tests="11" failures="1" skipped="0" time="25.097">
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-01 Home page has a correct document outline" time="1.481"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-02 About Us page has a correct document outline" time="1.573"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-03 Services page has a correct document outline" time="1.390"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-04 News page has a correct document outline" time="1.508"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-05 Process page has a correct document outline" time="1.571"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-06 Contact page has a correct document outline" time="1.602"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-07 Privacy Policy page has a correct document outline" time="1.535"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-08 Every page has a unique title" time="9.784"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-09 Images, links and buttons on the Home page have text alternatives" time="1.551"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-10 Home page lists all six services as headed articles" time="1.648"></testcase>
+    <testcase classname="features/05_structure_semantics.feature" name="TC-SEM-11 Unknown URL shows an accessible 404 page with a way back" time="1.454">
+      <failure message="[known defect] Error: &quot;banner&quot; landmark count expect(received).toBeGreaterThan(expected) Expected: &gt; 0 Received: 0">Error: &quot;banner&quot; landmark count expect(received).toBeGreaterThan(expected) Expected: &gt; 0 Received: 0</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Reflow, text resizing, text spacing and motion" tests="8" failures="1" skipped="0" time="13.104">
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-01 Home page reflows at 320 CSS pixels without loss of content" time="1.669">
+      <failure message="[known defect] Error: content extending beyond the viewport (WCAG 1.4.10) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 16 - Array [] + Array [">Error: content extending beyond the viewport (WCAG 1.4.10) expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 16 - Array [] + Array [</failure>
+    </testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-02 Services page reflows at 320 CSS pixels without loss of content" time="1.493"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-03 Contact page reflows at 320 CSS pixels without loss of content" time="1.607"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-04 Process page reflows at 320 CSS pixels without loss of content" time="1.567"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-05 Text resized to 200% does not cause horizontal scrolling or hide the main heading" time="1.865"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-06 Increased text spacing does not clip content" time="1.910"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-07 Animations are disabled when the user prefers reduced motion" time="1.596"></testcase>
+    <testcase classname="features/06_responsive_motion.feature" name="TC-RSP-08 Without a reduced-motion preference the hero animation does run" time="1.397"></testcase>
+  </testsuite>
+  <testsuite name="Negative controls — the suite must catch real accessibility defects" tests="9" failures="0" skipped="0" time="17.228">
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-01 Injected defect &quot;image without alt&quot; is reported by axe-core as &quot;image-alt&quot;" time="2.154"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-02 Injected defect &quot;icon button without a name&quot; is reported by axe-core as &quot;button-name&quot;" time="2.186"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-03 Injected defect &quot;empty link&quot; is reported by axe-core as &quot;link-name&quot;" time="2.066"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-04 Injected defect &quot;unlabelled text input&quot; is reported by axe-core as &quot;label&quot;" time="1.963"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-05 Injected defect &quot;low contrast text&quot; is reported by axe-core as &quot;color-contrast&quot;" time="1.820"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-06 Injected defect &quot;focusable aria-hidden content&quot; is reported by axe-core as &quot;aria-hidden-focus&quot;" time="2.083"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-07 Injected defect &quot;invalid ARIA attribute&quot; is reported by axe-core as &quot;aria-valid-attr&quot;" time="1.932"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-08 Removing the focus outline is detected by the focus-visible check" time="1.470"></testcase>
+    <testcase classname="features/07_negative_controls.feature" name="TC-NEG-09 A fixed-width element wider than the viewport is detected by the reflow check" time="1.554"></testcase>
+  </testsuite>
+</testsuites>
