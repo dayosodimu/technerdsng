@@ -23,7 +23,8 @@ test.describe('Admin sign-in page', () => {
     await expect(signInPage.email).toBeVisible();
   });
 
-  test('malformed email cannot sign in and surfaces an error', async ({ signInPage, page }) => {
+  test('malformed email cannot sign in and surfaces an error @defect', async ({ signInPage, page }) => {
+    // Observed 2026-11-15: "not-an-email" + Continue gives no feedback at all (no error, no step change)
     // Clerk does not validate the identifier format up front; it reveals the password step.
     await signInPage.email.fill('not-an-email');
     await signInPage.continueButton.click();

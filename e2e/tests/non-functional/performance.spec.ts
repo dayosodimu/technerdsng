@@ -58,7 +58,7 @@ test.describe('Performance budgets @perf', () => {
   test.beforeEach(() => onlyOnChromiumDesktop(test.info().project.name));
 
   for (const path of ALL_AUDITED_PATHS) {
-    test(`Core Web Vitals within budget: ${path}`, async ({ page }, testInfo) => {
+    test(`Core Web Vitals within budget: ${path} @defect`, async ({ page }, testInfo) => {
       const m = await measure(page, path);
       await testInfo.attach('metrics.json', { body: JSON.stringify({ path, ...m, budget }, null, 2), contentType: 'application/json' });
       console.log(`[perf] ${path}`, JSON.stringify(m));
@@ -91,7 +91,7 @@ test.describe('Performance budgets @perf', () => {
     expect(tti, 'hero visible on throttled mobile network (ms)').toBeLessThanOrEqual(10_000);
   });
 
-  test('static assets are compressed and cacheable', async ({ page }) => {
+  test('static assets are compressed and cacheable @defect', async ({ page }) => {
     const issues: string[] = [];
     page.on('response', async (r) => {
       const url = new URL(r.url());
@@ -104,7 +104,7 @@ test.describe('Performance budgets @perf', () => {
     expect(issues).toEqual([]);
   });
 
-  test('images are appropriately sized and lazily loaded below the fold', async ({ page }) => {
+  test('images are appropriately sized and lazily loaded below the fold @defect', async ({ page }) => {
     await page.goto('/', { waitUntil: 'networkidle' });
     const report = await page.locator('img').evaluateAll((imgs) =>
       (imgs as HTMLImageElement[]).map((i) => ({

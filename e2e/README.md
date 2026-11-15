@@ -93,5 +93,5 @@ Tests tagged `@defect` assert the **correct** behaviour and stay red until fixed
 
 **Accessibility / UX**
 12. Viewport meta `maximum-scale=1` blocks pinch-zoom on iOS (WCAG 1.4.4).
-13. `/sign-in` has a serious colour-contrast violation, overflows horizontally at 768 px and 1024 px (Clerk card), and the hero title overlaps its subtitle on desktop.
+13. `/sign-in`: a malformed email gives no feedback at all; serious colour-contrast violation; overflows horizontally at 768 px and 1024 px (Clerk card), and the hero title overlaps its subtitle on desktop.
 14. Cookie consent panel isn't exposed as a dialog (no role/label), and "Close settings" re-shows the first-visit banner even after a choice was saved.

@@ -59,7 +59,7 @@ jobs:
             *) npx playwright install --with-deps chromium ;;
           esac
       - name: Run tests
-        run: npx playwright test --project=${{ matrix.project }} ${{ github.event.inputs.grep && format('--grep "{0}"', github.event.inputs.grep) || '' }}
+        run: npx playwright test --project=${{ matrix.project }} ${{ github.event.inputs.grep && format('--grep "{0}"', github.event.inputs.grep) || '' }} ${{ github.event.inputs.grep_invert && format('--grep-invert "{0}"', github.event.inputs.grep_invert) || '' }}
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4

@@ -16,7 +16,7 @@ test.describe('Responsive layout', () => {
   });
 
   for (const vp of VIEWPORTS) {
-    test(`no horizontal overflow or clipped headings at ${vp.width}px (${vp.name})`, async ({ page }) => {
+    test(`no horizontal overflow or clipped headings at ${vp.width}px (${vp.name})${[768, 1024].includes(vp.width) ? ' @defect' : ''}`, async ({ page }) => {
       await page.setViewportSize({ width: vp.width, height: vp.height });
       for (const path of ALL_AUDITED_PATHS) {
         await page.goto(path);

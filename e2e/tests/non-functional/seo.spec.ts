@@ -5,7 +5,7 @@ test.describe('SEO & discoverability @seo', () => {
   test.beforeEach(() => onlyOnChromiumDesktop(test.info().project.name));
 
   for (const route of PUBLIC_ROUTES) {
-    test(`on-page SEO: ${route.path}`, async ({ site, page, baseURL }) => {
+    test(`on-page SEO: ${route.path} @defect`, async ({ site, page, baseURL }) => {
       await site.goto(route.path);
       const title = await page.title();
       expect.soft(title.length, 'title length 10-65 chars').toBeGreaterThanOrEqual(10);
@@ -38,7 +38,7 @@ test.describe('SEO & discoverability @seo', () => {
     expect(new Set(descs.values()).size, JSON.stringify([...descs])).toBe(descs.size);
   });
 
-  test('robots.txt is served and references a sitemap', async ({ request }) => {
+  test('robots.txt is served and references a sitemap @defect', async ({ request }) => {
     const res = await request.get('/robots.txt');
     expect(res.status()).toBe(200);
     expect(res.headers()['content-type']).toMatch(/text\/plain/);
@@ -59,7 +59,7 @@ test.describe('SEO & discoverability @seo', () => {
     expect(xml).not.toMatch(/\/admin|\/sign-in/);
   });
 
-  test('server-rendered HTML has route-specific titles for crawlers without JS', async ({ request }) => {
+  test('server-rendered HTML has route-specific titles for crawlers without JS @defect', async ({ request }) => {
     // SPA shell currently returns the same <title> for every route; social/crawler previews suffer.
     const titles = new Set<string>();
     for (const r of PUBLIC_ROUTES) {
@@ -69,7 +69,7 @@ test.describe('SEO & discoverability @seo', () => {
     expect.soft(titles.size, 'distinct <title> in raw HTML across routes').toBe(PUBLIC_ROUTES.length);
   });
 
-  test('structured data (JSON-LD Organization) is present on home', async ({ site, page }) => {
+  test('structured data (JSON-LD Organization) is present on home @defect', async ({ site, page }) => {
     await site.goto('/');
     const blocks = await page.locator('script[type="application/ld+json"]').allTextContents();
     const types = blocks.flatMap((b) => {

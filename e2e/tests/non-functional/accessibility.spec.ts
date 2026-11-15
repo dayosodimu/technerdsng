@@ -5,7 +5,7 @@ import { ALL_AUDITED_PATHS } from '../../utils/site-map';
 /** WCAG 2.2 AA audit with axe-core. Fails on serious/critical issues; attaches the full report. */
 test.describe('Accessibility (WCAG 2.2 AA) @a11y', () => {
   for (const path of ALL_AUDITED_PATHS) {
-    test(`axe scan: ${path}`, async ({ page }, testInfo) => {
+    test(`axe scan: ${path}${path === '/sign-in' ? ' @defect' : ''}`, async ({ page }, testInfo) => {
       await page.goto(path, { waitUntil: 'domcontentloaded' });
       await expect(page.locator('h1').first()).toBeVisible({ timeout: 20_000 });
       await page.waitForLoadState('networkidle');
