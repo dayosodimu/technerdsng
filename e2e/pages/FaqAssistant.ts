@@ -7,7 +7,8 @@ export class FaqAssistant {
   readonly closeButton: Locator;
 
   constructor(readonly page: Page) {
-    this.toggle = page.getByRole('button', { name: 'Ask a question' });
+    // Label flips between "Ask a question" and "Close help", so locate by aria-controls
+    this.toggle = page.locator('button[aria-controls="faq-assistant-panel"]');
     this.panel = page.locator('#faq-assistant-panel');
     this.closeButton = page.getByRole('button', { name: 'Close quick answers' });
   }

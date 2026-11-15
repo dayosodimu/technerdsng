@@ -30,10 +30,15 @@ export class SignInPage {
     await expect(this.email).toBeVisible({ timeout: 20_000 }); // Clerk JS loads async
   }
 
+  /** Clerk keeps the password input in an aria-hidden wrapper (for autofill) until the password step. */
+  async passwordStepActive() {
+    return this.password.evaluate((el) => !el.closest('[aria-hidden="true"]') && el.getBoundingClientRect().height > 0);
+  }
+
   async signIn(email: string, password: string) {
     await this.email.fill(email);
     await this.continueButton.click();
-    await expect(this.password).toBeVisible();
+    await expect.poll(() => this.passwordStepActive()).toBe(true);
     await this.password.fill(password);
     await this.continueButton.click();
   }

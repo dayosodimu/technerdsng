@@ -28,8 +28,8 @@ test.describe('Public pages render @smoke', () => {
 
   test('home page contains every key section', async ({ site, page }) => {
     await site.goto('/');
-    for (const id of ['intro', 'services', 'about', 'process', 'contact']) {
-      await expect(page.locator(`section#${id}`), `section #${id}`).toBeAttached();
+    for (const id of ['top', 'services', 'about', 'process', 'contact']) {
+      await expect(page.locator(`main section#${id}`), `section #${id}`).toBeAttached();
     }
   });
 

@@ -39,7 +39,7 @@ export async function seedConsent(page: Page, choice: Exclude<ConsentChoice, 'no
 }
 
 // Third-party noise that is not the site's fault (extensions, blocked trackers, Clerk dev warnings)
-const IGNORED_CONSOLE = [/favicon/i, /Clerk has been loaded with development keys/i, /net::ERR_BLOCKED_BY_CLIENT/i];
+const IGNORED_CONSOLE = [/favicon/i, /Clerk has been loaded with development keys/i, /net::ERR_BLOCKED_BY_CLIENT/i, /Cookie “__cf_bm” has been rejected/i];
 
 export const test = base.extend<Fixtures>({
   consent: ['reject', { option: true }],

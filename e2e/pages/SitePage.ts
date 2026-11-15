@@ -23,7 +23,8 @@ export class SitePage {
     this.main = page.locator('main#main');
     this.homeLogo = this.header.getByRole('link', { name: 'Technerds home' });
     this.skipLink = page.getByRole('link', { name: 'Skip to main content' });
-    this.menuButton = page.getByRole('button', { name: 'Open navigation menu' });
+    // Label flips between "Open navigation menu" / "Close navigation menu", so locate by state attribute
+    this.menuButton = page.locator('header button[aria-expanded]');
     this.h1 = page.getByRole('heading', { level: 1 });
   }
 

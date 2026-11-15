@@ -19,12 +19,12 @@ test.describe('Contact page @smoke', () => {
   });
 
   test('"Email the team" CTA targets the general inbox', async ({ site }) => {
-    await expect(site.main.getByRole('link', { name: /email the team/i })).toHaveAttribute('href', `mailto:${CONTACT_EMAILS.general}`);
+    await expect(site.main.getByRole('link', { name: /email the team/i })).toHaveAttribute('href', new RegExp(`^mailto:${CONTACT_EMAILS.general}(\\?subject=.+)?$`));
   });
 
   test('mail links are well-formed addresses on the company domain', async ({ page }) => {
     const hrefs = await page.locator('main a[href^="mailto:"]').evaluateAll((as) => as.map((a) => a.getAttribute('href')!));
     expect(hrefs.length).toBeGreaterThan(0);
-    for (const href of hrefs) expect(href).toMatch(/^mailto:[a-z0-9._%+-]+@technerdsng\.com$/i);
+    for (const href of hrefs) expect(href).toMatch(/^mailto:[a-z0-9._%+-]+@technerdsng\.com(\?subject=[^&]+)?$/i);
   });
 });

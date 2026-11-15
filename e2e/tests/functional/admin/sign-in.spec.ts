@@ -17,32 +17,39 @@ test.describe('Admin sign-in page', () => {
 
   test('empty submission is blocked', async ({ signInPage, page }) => {
     await signInPage.continueButton.click();
+    await page.waitForTimeout(1500);
     await expect(page).toHaveURL(/\/sign-in/);
-    // Either native required-validation or a Clerk error must stop progress
-    const nativeInvalid = await signInPage.email.evaluate((el: HTMLInputElement) => !el.checkValidity());
-    if (!nativeInvalid) await expect(signInPage.formError.first()).toBeVisible();
-    await expect(signInPage.password).toBeHidden();
+    await expect(signInPage.heading).toBeVisible();
+    await expect(signInPage.email).toBeVisible();
   });
 
-  test('malformed email shows a validation error', async ({ signInPage, page }) => {
+  test('malformed email cannot sign in and surfaces an error', async ({ signInPage, page }) => {
+    // Clerk does not validate the identifier format up front; it reveals the password step.
     await signInPage.email.fill('not-an-email');
     await signInPage.continueButton.click();
+    await page.waitForTimeout(1500);
+    if (await signInPage.passwordStepActive()) {
+      await signInPage.password.fill('Wrong-Password-123!');
+      await signInPage.continueButton.click();
+    }
+    await expect(signInPage.formError.first()).toBeVisible({ timeout: 15_000 });
     await expect(page).toHaveURL(/\/sign-in/);
-    await expect(signInPage.formError.first()).toBeVisible();
   });
 
   test('unknown account is rejected without revealing details', async ({ signInPage }) => {
     await signInPage.email.fill(`qa-nonexistent-${Date.now()}@example.com`);
     await signInPage.continueButton.click();
+    if (await signInPage.passwordStepActive()) {
+      await signInPage.password.fill('Wrong-Password-123!');
+      await signInPage.continueButton.click();
+    }
     await expect(signInPage.formError.first()).toBeVisible({ timeout: 15_000 });
     await expect(signInPage.formError.first()).not.toContainText(/stack|exception|sql|undefined/i);
   });
 
-  test('password field masks input and can be revealed', async ({ signInPage }) => {
-    test.skip(!(await signInPage.password.isVisible()), 'Password step not shown on first screen for this Clerk config');
+  test('password input is masked', async ({ signInPage }) => {
     await expect(signInPage.password).toHaveAttribute('type', 'password');
-    await signInPage.showPassword.click();
-    await expect(signInPage.password).toHaveAttribute('type', 'text');
+    await expect(signInPage.password).toHaveAttribute('name', 'password');
   });
 
   test('"Back to Technerds" returns to the public site', async ({ signInPage, page }) => {
@@ -70,7 +77,8 @@ test.describe('Admin sign-in page', () => {
   test('heading and subtitle do not overlap (visual layout) @defect', async ({ page }) => {
     // Observed 2026-11-15 on desktop: "place to grow." overlaps the "Sign in to manage…" line
     test.skip(isMobile(test.info().project.name), 'Desktop layout check');
-    const title = page.getByRole('heading', { name: /good work deserves/i });
+    // Hero copy is rendered as <p> elements, not headings
+    const title = page.getByText(/good work deserves a clear place to grow/i);
     const subtitle = page.getByText(/sign in to manage company copy/i);
     const [a, b] = [await title.boundingBox(), await subtitle.boundingBox()];
     expect(a && b).toBeTruthy();

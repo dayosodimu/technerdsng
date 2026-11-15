@@ -60,8 +60,10 @@ test.describe('Mobile navigation menu', () => {
     await site.goto('/');
     await expect(site.menuButton).toBeVisible();
     await expect(site.menuButton).toHaveAttribute('aria-expanded', 'false');
+    await expect(site.menuButton).toHaveAccessibleName(/open navigation menu/i);
     await site.menuButton.click();
     await expect(site.menuButton).toHaveAttribute('aria-expanded', 'true');
+    await expect(site.menuButton).toHaveAccessibleName(/close navigation menu/i);
     await expect(site.primaryNav.getByRole('link', { name: /services/i })).toBeVisible();
   });
 

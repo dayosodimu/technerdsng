@@ -75,14 +75,17 @@ test.describe('Cookie consent banner', () => {
     expect(await cookieConsent.storedPreferences()).toMatchObject({ analytical: true, functional: false, advertisement: false });
   });
 
-  test('footer "Privacy options" re-opens settings and reflects saved choice', async ({ site, cookieConsent }) => {
+  test('footer "Privacy options" re-opens settings and closing keeps the saved choice @defect', async ({ site, cookieConsent }) => {
     await site.goto('/');
     await cookieConsent.rejectOptional.click();
     await cookieConsent.privacyOptions.click();
     await expect(cookieConsent.panel).toBeVisible();
     await expect(cookieConsent.analytical).not.toBeChecked();
     await cookieConsent.close.click();
+    // Observed 2026-11-15: panel falls back to the first-visit banner (Accept / Reject / Customize)
+    await expect(cookieConsent.acceptAll, 'banner must not re-prompt after a saved choice').toBeHidden();
     await expect(cookieConsent.panel).toBeHidden();
+    expect(await cookieConsent.storedPreferences()).toMatchObject({ analytical: false });
   });
 
   test('consent panel is exposed as an accessible dialog @a11y @defect', async ({ site, cookieConsent }) => {

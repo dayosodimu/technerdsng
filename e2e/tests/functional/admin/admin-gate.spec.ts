@@ -38,15 +38,17 @@ test.describe('Admin gate (unauthenticated) @smoke', () => {
     const apiResponses: { url: string; status: number }[] = [];
     page.on('response', (r) => {
       const u = new URL(r.url());
-      if (u.hostname.endsWith('technerdsng.com') && u.pathname.startsWith('/api/')) {
-        apiResponses.push({ url: u.pathname, status: r.status() });
-      }
+      const method = r.request().method();
+      if (!u.hostname.endsWith('technerdsng.com') || !u.pathname.startsWith('/api/') || u.pathname.startsWith('/api/__clerk')) return;
+      // Public GETs (e.g. /api/site-content feeding the marketing pages) are expected to succeed.
+      if (method !== 'GET' || /\/api\/admin/i.test(u.pathname)) apiResponses.push({ url: `${method} ${u.pathname}`, status: r.status() });
     });
     await adminPage.goto();
     await expect(adminPage.gateHeading).toBeVisible();
     await page.waitForLoadState('networkidle');
     // Any write/admin API hit without a session must not succeed with data
-    for (const r of apiResponses.filter((x) => /admin|posts|content|news/i.test(x.url))) {
+    // NOTE: write endpoints (PUT/POST /api/site-content etc.) are not probed against production on purpose.
+    for (const r of apiResponses) {
       expect([401, 403, 404], `${r.url} returned ${r.status}`).toContain(r.status);
     }
   });

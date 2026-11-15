@@ -61,7 +61,8 @@ test.describe('Security hygiene @security', () => {
     expect(insecure).toEqual([]);
   });
 
-  test('first-party cookies are Secure and session cookies HttpOnly/SameSite', async ({ page, context }) => {
+  test('first-party cookies are Secure and SameSite @defect', async ({ page, context }) => {
+    // Observed 2026-11-15: hosting cookie "GAESA" (Google Frontend) is set without Secure
     await page.goto('/sign-in', { waitUntil: 'networkidle' });
     const cookies = (await context.cookies()).filter((c) => c.domain.includes('technerdsng.com'));
     for (const c of cookies) {

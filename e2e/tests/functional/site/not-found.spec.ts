@@ -18,7 +18,7 @@ test.describe('Unknown routes (404)', () => {
     await expect(page.locator('body')).not.toContainText(/forget to add the page to the router/i);
   });
 
-  test('404 page is not indexable @seo', async ({ page, site }) => {
+  test('404 page is not indexable @seo @defect', async ({ page, site }) => {
     await page.goto(bogus);
     await expect(site.h1).toBeVisible();
     const robots = await page.locator('meta[name="robots"]').getAttribute('content');

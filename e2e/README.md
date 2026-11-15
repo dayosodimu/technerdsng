@@ -68,15 +68,30 @@ e2e/
     └── non-functional/       # a11y, perf, security, SEO, responsive, reliability
 ```
 
-## Findings at time of writing (2026-11-15) — tagged `@defect`
+## Findings from the first CI run (2026-11-15)
 
-1. `technerdsng.com` (apex) does not resolve — only `www` works.
-2. Unknown URLs return HTTP 200 (soft-404) and the 404 page shows developer text: "Did you forget to add the page to the router?"
-3. `/sitemap.xml` returns the HTML app shell instead of XML; `robots.txt` has no `Sitemap:` line.
-4. `/admin` and `/sign-in` are `index, follow` — should be `noindex`.
-5. No security headers (HSTS, CSP, X-Frame-Options / frame-ancestors, X-Content-Type-Options, Referrer-Policy, Permissions-Policy).
-6. Viewport meta sets `maximum-scale=1`, blocking pinch-zoom on iOS (WCAG 1.4.4).
-7. Cookie consent panel isn't exposed as a dialog (no `role`/label).
-8. A script from `i.replit.com` loads on every production page.
-9. On desktop `/sign-in`, the large heading overlaps the subtitle line.
-10. Review item: `/sign-in` offers public **Sign up** for an editor-only studio — confirm new accounts get no editor rights.
+Tests tagged `@defect` assert the **correct** behaviour and stay red until fixed.
+
+**Availability / routing**
+1. `technerdsng.com` (apex) does not resolve (`ENOTFOUND`) — only `www` works.
+2. Unknown URLs return HTTP 200 (soft-404); the 404 page is `index, follow` and shows developer copy: "Did you forget to add the page to the router?"
+
+**Security**
+3. No `Content-Security-Policy`, `X-Frame-Options`/`frame-ancestors` (admin & sign-in can be framed), `X-Content-Type-Options`, `Referrer-Policy` or `Permissions-Policy`. (HSTS *is* set.)
+4. Hosting cookie `GAESA` is set without `Secure`.
+5. `https://i.replit.com/script.js` loads on every production page.
+6. Review item: `/sign-in` offers public **Sign up** for an editor-only studio — confirm new accounts get no editor rights. `GET /api/site-content` is public (expected for site copy); verify write methods require an editor session (not probed against production).
+
+**SEO**
+7. `/admin` and `/sign-in` are `index, follow` (should be `noindex`).
+8. `/sitemap.xml` serves the HTML app shell; `robots.txt` has no `Sitemap:` and doesn't disallow `/admin`.
+9. No `og:image`, no JSON-LD Organization schema; raw HTML has the same `<title>` on every route (SPA).
+
+**Performance**
+10. ~920 KB of JavaScript on every page (budget 700 KB); static JS/CSS served **without compression** and **without `Cache-Control`**.
+11. Brand PNGs (`technerd-black/white/pattern.png`) are over 2.5× their rendered size; CLS 0.104 on `/privacy-policy` (budget 0.1).
+
+**Accessibility / UX**
+12. Viewport meta `maximum-scale=1` blocks pinch-zoom on iOS (WCAG 1.4.4).
+13. `/sign-in` has a serious colour-contrast violation, overflows horizontally at 768 px and 1024 px (Clerk card), and the hero title overlaps its subtitle on desktop.
+14. Cookie consent panel isn't exposed as a dialog (no role/label), and "Close settings" re-shows the first-visit banner even after a choice was saved.

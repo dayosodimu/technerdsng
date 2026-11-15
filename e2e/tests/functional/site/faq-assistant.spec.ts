@@ -8,6 +8,7 @@ test.describe('Quick answers (FAQ assistant) widget', () => {
 
   test('is collapsed by default and wired with aria-controls', async ({ faq }) => {
     await expect(faq.toggle).toBeVisible();
+    await expect(faq.toggle).toHaveAccessibleName(/ask a question/i);
     await expect(faq.toggle).toHaveAttribute('aria-expanded', 'false');
     await expect(faq.toggle).toHaveAttribute('aria-controls', 'faq-assistant-panel');
     await expect(faq.panel).toBeHidden();
