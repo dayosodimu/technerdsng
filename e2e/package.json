@@ -1,0 +1,29 @@
+{
+  "name": "technerdsng-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end functional and non-functional Playwright/TypeScript test suite for www.technerdsng.com and the /admin content studio",
+  "scripts": {
+    "test": "playwright test",
+    "test:functional": "playwright test tests/functional",
+    "test:site": "playwright test tests/functional/site",
+    "test:admin": "playwright test tests/functional/admin",
+    "test:nonfunctional": "playwright test tests/non-functional",
+    "test:a11y": "playwright test --grep @a11y",
+    "test:perf": "playwright test --grep @perf --project=chromium-desktop",
+    "test:security": "playwright test --grep @security --project=chromium-desktop",
+    "test:seo": "playwright test --grep @seo --project=chromium-desktop",
+    "test:smoke": "playwright test --grep @smoke --project=chromium-desktop",
+    "test:no-defects": "playwright test --grep-invert @defect",
+    "test:headed": "playwright test --headed --project=chromium-desktop",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.7.2"
+  }
+}

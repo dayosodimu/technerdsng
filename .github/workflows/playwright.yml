@@ -1,0 +1,78 @@
+name: Playwright E2E (technerdsng.com)
+
+on:
+  push:
+    branches: [master, 'test/**']
+    paths: ['e2e/**', '.github/workflows/playwright.yml']
+  pull_request:
+    paths: ['e2e/**', '.github/workflows/playwright.yml']
+  schedule:
+    - cron: '17 5 * * *' # daily ~06:17 Lagos time production check
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Site under test'
+        default: 'https://www.technerdsng.com'
+      grep:
+        description: 'Optional --grep filter (e.g. @smoke, @a11y, @perf)'
+        default: ''
+
+permissions:
+  contents: read
+  checks: write
+
+concurrency:
+  group: e2e-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  e2e:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [chromium-desktop, firefox-desktop, webkit-desktop, mobile-chrome, mobile-safari]
+    defaults:
+      run:
+        working-directory: e2e
+    env:
+      CI: 'true'
+      BASE_URL: ${{ github.event.inputs.base_url || 'https://www.technerdsng.com' }}
+      ADMIN_EMAIL: ${{ secrets.TECHNERDS_ADMIN_EMAIL }}
+      ADMIN_PASSWORD: ${{ secrets.TECHNERDS_ADMIN_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: e2e/package-lock.json
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - name: Install browser
+        run: |
+          case "${{ matrix.project }}" in
+            firefox-*) npx playwright install --with-deps firefox ;;
+            webkit-*|mobile-safari) npx playwright install --with-deps webkit ;;
+            *) npx playwright install --with-deps chromium ;;
+          esac
+      - name: Run tests
+        run: npx playwright test --project=${{ matrix.project }} ${{ github.event.inputs.grep && format('--grep "{0}"', github.event.inputs.grep) || '' }}
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.project }}
+          path: |
+            e2e/playwright-report
+            e2e/test-results
+          retention-days: 14
+      - name: Publish JUnit summary
+        if: always()
+        uses: mikepenz/action-junit-report@v4
+        with:
+          report_paths: e2e/test-results/junit.xml
+          check_name: JUnit (${{ matrix.project }})
+          require_tests: false
